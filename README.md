@@ -27,6 +27,9 @@ python youtube_stream_grabber.py -c channels.txt -o livestreams.txt
 # Checking if DrLupo is live, and getting the stream URL
 python youtube_stream_grabber.py -c UCVeW9qkBjo3zosnqUbG7CFw
 ```
+
+![Example output with John Hammond and DrLupo channels](https://user-images.githubusercontent.com/2191497/211171113-60009f93-6bfc-4774-9a12-a18814cdaff0.png)
+
 ## Credits
 
 - Jeff Noel (https://github.com/JF10R)
