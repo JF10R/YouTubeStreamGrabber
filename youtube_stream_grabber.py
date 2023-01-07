@@ -123,9 +123,9 @@ for channel_id in channels:
         output_live_stream_info(channel_name, video_id, args.output)
 
 # Output the contents of the output file
-if (args.output):
-    print()
-    with open(args.output, 'r') as f:
-        lines = f.read().splitlines()
-        for line in lines:
-            print(line)
+#if (args.output):
+#    print()
+#    with open(args.output, 'r') as f:
+#        lines = f.read().splitlines()
+#        for line in lines:
+#            print(line)
