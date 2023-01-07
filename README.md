@@ -9,6 +9,20 @@ Fetch information about YouTube channels and their live streams.
 - [google-auth-oauthlib](https://pypi.org/project/google-auth-oauthlib/)
 - [google-api-python-client](https://pypi.org/project/google-api-python-client/)
 
+## Setup
+
+You will need to create a Google Cloud Developer project though the [GCP Developer Console](https://console.cloud.google.com/) which has access to the YouTube Data API v3.  
+You will then need to create a OAuth 2.0 Client in the project and enter its `Client ID`, `Client Secret` and the `Project ID` in the `client_secret.json` file.
+
+You can use the helper script, getRefreshToken.py`, by calling it as-is without parameters, after you filled the fields mentioned above to grab the `refresh_token` from the callback url. This is the last field you need to fill in the `client_secret.json` file.
+
+The scripts uses two methods from YouTube's Data API:  
+
+- `youtube.api.v3.V3DataChannelService.List`
+  - To grab the livestream information (is the livestream on? If so, what is the `videoid`?)
+- `youtube.api.v3.V3DataSearchService.List`
+  - To grab the channel name for verbosity.
+
 ## Usage
 
 ```bash
