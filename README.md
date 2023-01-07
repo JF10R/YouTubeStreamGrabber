@@ -1,6 +1,7 @@
 # YouTubeStreamGrabber
 
-Fetch information about YouTube channels and their live streams.
+Fetch information about YouTube channels and their live streams.  
+
 The main motivation behind it was to have a small script to grab a list of livestream URLs in a online tournament setting. I am not sure how this would work with *unlisted* YouTube streams as I doubt the API will list those.
 
 ## Requirements
